@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+.App{
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paddingH{
+    padding-left: 8em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.paddingS{
+    padding-left: 20em;
+    padding-right: 8em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a{
+    text-decoration: none;
+    font-family: "Luckiest Guy";
+    font-size: 28px;
 }
 
-.App-link {
-  color: #61dafb;
+.pokeName{
+    font-family: "Potta One";
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputMedia{
+    display: block;
+    /* width: 100%; */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+@media (min-width: 320px) and (max-width: 556px) {
+    .navbar a{
+        font-size: 14px; 
+    }
+
+    .paddingH{
+        padding-left: 1em;
+    }
+
+    .paddingS{
+        padding-left: 0;
+    }
+
+    .inputMedia{
+        height: 20px;
+        /* width: 100px !important; */
+    }
+
+    .btnMedia{
+        height: 20px;
+        padding: 0px 5px !important; 
+        font-size: 9px !important; 
+    }
+
+    .pokeName{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 556px) and (max-width: 768px) {
+    .navbar a{
+        font-size: 18px; 
+    }
+
+    .paddingH{
+        padding-left: 6em;
+    }
+
+    .paddingS{
+        padding-left: 0;
+    }
+
+    .inputMedia{
+        height: 30px;
+        width: 200px !important;
+    }
+
+    .btnMedia{
+        height: 30px;
+        font-size: 12px !important; 
+    }
+
+    .pokeName{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar a{
+        font-size: 22px; 
+    }
+
+    .paddingH{
+        padding-left: 3em;
+    }
+
+    .paddingS{
+        padding-left: 0em;
+    }
+
+    .inputMedia{
+        width: 250px !important;
+    }
+
+    .pokeName{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .navbar a{
+        font-size: 28px; 
+    }
+
+    .paddingH{
+        padding-left: 3em;
+    }
+
+    .paddingS{
+        padding-left: 8em;
+        padding-right: 0em;
+    }
+
+    .inputMedia{
+        width: 250px !important;
+    }
+
+    .pokeName{
+        font-size: 16px;
+    }
+}
+
+
